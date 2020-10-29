@@ -1,7 +1,5 @@
 node default {
-  file{'/root/README':
-    ensure  => file,
-    content => 'This is a readme',
-    owner   => 'root',
-  }
+}
+node 'puppet-master.us-central1-a.c.cloudmasters-iac.internal' {
+  include role::master_server
 }
