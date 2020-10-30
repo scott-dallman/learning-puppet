@@ -6,6 +6,7 @@ node 'puppet-master.us-central1-a.c.cloudmasters-iac.internal' {
   file {'/root/README':
     ensure => file,
     content => "Welcome to ${fqdn}\n",
+  }
 }
 
 node /^web/ {
